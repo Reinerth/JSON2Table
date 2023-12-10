@@ -1,0 +1,19 @@
+
+/* THE MAIN SETTINGS **********************************/
+*{
+    font-family: system-ui;
+    font-size: 19px;
+}
+
+table {
+    /* https://www.w3schools.com/html/html_table_borders.asp */
+    /* width: 100%; */
+    height: 100%;
+    top:0;
+    left:0;
+    border-style: ridge;
+}
+th, td {
+    border-style: ridge;
+    border-color: #96D4D4;
+}

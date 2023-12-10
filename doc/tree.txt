@@ -1,0 +1,24 @@
+cmd:tree /f /a > tree.txt
+
+o root
+|   JSON2Table.htm
+|   
++---doc
+|       tree.txt
+|       input.PNG
+|       output.PNG
+|       
+\---mvc
+    +---controller
+    |       JSON2Table-controller.js
+    |       
+    +---model
+    |       example-content.json
+    |       JSON2Table-center.js
+    |       
+    \---view
+        +---css
+        |       styles.css
+        |       
+        \---img
+                JSON2Table-ico.png

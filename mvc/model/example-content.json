@@ -1,0 +1,36 @@
+{
+    "divisionOne": {
+        "divisionDescriptionOne": "a list of some movies ...",
+        "movies": {
+            "cinema": {
+                "titles": {
+                    "oblivion": ["tom cruise", "and a girl"],
+                    "blade runner": ["harrison ford", "and a girl"],
+                    "ghost in the shell": "the girl",
+                    "metropolis": "the girl"
+                }
+            },
+            "video": {
+                "titles": {
+                    "forrest gump": ["tom hanks", "without a girl"]
+                }
+            }
+        }
+    },
+    "divisionTwo": {
+        "divisionDescriptionTwo": "some description",
+        "someProperty": "some value"
+    },
+    "divisionThree": {
+        "divisionDescriptionThree": "some description",
+        "someProperty": "some value"
+    }
+}
+
+
+
+
+
+
+
+
