@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JSON2Table</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- REMEMBER (usually) -->
+        <!-- First: CSS-files needs to be loaded -->
+        <!-- Second: DOM needs to be loaded, which needs the CSS -->
+        <!-- Third: finally the JS needs to be loaded, which needs the DOM and the CSS -->
+
+        <style>
+            *{
+                font-family: system-ui;
+                font-size: 19px;
+            }
+            table {
+                /* https://www.w3schools.com/html/html_table_borders.asp */
+                /* width: 100%; */
+                height: 100%;
+                top:0;
+                left:0;
+                border-style: ridge;
+            }
+            th, td {
+                border-style: ridge;
+                border-color: #96D4D4;
+            }
+        </style>
+    </head>
+    <body>
+
+        
+        <div id="myDOMContainer"></div>
+
+
+        <script src="./JSON2Table.js"></script>
+
+        <script>
+
+            /*******************************************************************************
+             * Initialize the JSON-object, which should be converted to a htm-table        *
+            *******************************************************************************/
+            let myJSON = {
+                "divisionOne": {
+                    "divisionDescriptionOne": "a list of some movies ...",
+                    "movies": {
+                        "cinema": {
+                            "titles": {
+                                "oblivion": ["tom cruise", "and a girl"],
+                                "blade runner": ["harrison ford", "and a girl"],
+                                "ghost in the shell": "the girl",
+                                "metropolis": "the girl"
+                            }
+                        },
+                        "video": {
+                            "titles": {
+                                "forrest gump": ["tom hanks", "without a girl"]
+                            }
+                        }
+                    }
+                },
+                "divisionTwo": {
+                    "divisionDescriptionTwo": "some description",
+                    "someProperty": "some value"
+                },
+                "divisionThree": {
+                    "divisionDescriptionThree": "some description",
+                    "someProperty": "some value"
+                }
+            };
+
+
+
+
+            /*******************************************************************************
+             * Initialize a DOM-container where the generated htm-table should be inserted *
+            *******************************************************************************/
+            let myDOMContainer = document.getElementById("myDOMContainer");
+
+
+
+            /******************************************************************************
+             * INVOKE the public function from the class JSON2Table.                      *
+            *******************************************************************************/
+            JSON2Table.init(myJSON, myDOMContainer);
+
+
+
+
+
+
+       </script>
+
+    </body>
+</html>
