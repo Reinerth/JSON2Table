@@ -1,16 +1,17 @@
 
 # Generate html-table from nested JSON-Object :page_with_curl:
 
-I have integrated the class in my favourite files-structure (MVC-template)
-You can find details in corresponding project here:
-https://github.com/Reinerth/Application-Template-MVC-best-Practice
+## To be used like:
 
+1. let myJSON = { ... }; 
+2. let myDOMContainer = document.getElementById("myDOMContainer");
+
+3. JSON2Table.init(myJSON, myDOMContainer);
+
+(In the file how-to-use.htm is a complete example.)
 
 
 ## This is what it look like: 
-## Contained files:
-
-![tree](https://github.com/Reinerth/JSON2Table/assets/85163640/eab697c5-5140-477c-8670-904582e94554)
 
 ## INPUT:
 
