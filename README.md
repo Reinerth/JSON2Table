@@ -1,14 +1,13 @@
 
 # Generate html-table from nested JSON-Object :page_with_curl:
+<br><br><br>
+## The way to be used:
+<br>
+1. let myJSON = { ... }; <br>
+2. let myDOMContainer = document.getElementById("myDOMContainer");<br>
+3. JSON2Table.init(myJSON, myDOMContainer);<br>
 
-## To be used like:
-
-1. let myJSON = { ... }; 
-2. let myDOMContainer = document.getElementById("myDOMContainer");
-
-3. JSON2Table.init(myJSON, myDOMContainer);
-
-(In the file how-to-use.htm is a complete example.)
+<br><br><br>
 
 
 ## This is what it look like: 
